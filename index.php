@@ -22,7 +22,7 @@
 	<!--PAGINA PRINCIPAL LOGIN-->
 	<div class="row" style="margin-top: 150px; ">
 		<div class="col-md-5 text-center" style="border-right:1px solid #000; height: 400px;">
-			<img src="img/prima-logo.png" alt="" style="margin-top: 55px">
+			<img src="img/logo02.jpg" alt="" style="margin-top: 55px">
 			<h4>PIRMA</h4>
 			<br><br><br>		
 			<h3>Sistema de Gestion de Incidencias</h3>
