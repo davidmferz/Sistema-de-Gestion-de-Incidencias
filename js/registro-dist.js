@@ -14,9 +14,26 @@ var Ventana = function Ventana(props) {
 					"div",
 					{ className: "modal-header" },
 					React.createElement(
-						"h5",
-						{ className: "modal-title" },
-						"Nueva Surcursal"
+						"div",
+						{ className: "" },
+						React.createElement(
+							"div",
+							{ className: "row" },
+							React.createElement(
+								"div",
+								{ className: "col-3" },
+								React.createElement("img", { src: "img/more.png", alt: "Imagen no econtrada", className: "rounded float-left" })
+							),
+							React.createElement(
+								"div",
+								{ className: "col-9 mt-2" },
+								React.createElement(
+									"h5",
+									null,
+									"Nueva Surcursal"
+								)
+							)
+						)
 					),
 					React.createElement(
 						"button",
@@ -38,12 +55,32 @@ var Ventana = function Ventana(props) {
 						React.createElement(
 							"div",
 							{ className: "form-group" },
+							React.createElement(
+								"label",
+								{ htmlFor: "nombre" },
+								"Nombre de la Surcursal"
+							),
 							React.createElement("input", { type: "text", className: "form-control", id: "text-" + props.id, name: "nombre", placeholder: "Ingrese Nombre" })
 						),
-						props.id == "vtnAtencion" && React.createElement(
+						React.createElement(
 							"div",
 							{ className: "form-group" },
-							React.createElement("input", { type: "password", className: "form-control", id: "password-" + props.id, name: "nombre", placeholder: "Ingrese Contrase\xF1a" })
+							React.createElement(
+								"label",
+								{ htmlFor: "user" },
+								"Usuario"
+							),
+							React.createElement("input", { type: "text", className: "form-control", id: "text-" + props.id, name: "user", placeholder: "Ingrese Nombre" })
+						),
+						React.createElement(
+							"div",
+							{ className: "form-group" },
+							React.createElement(
+								"label",
+								{ htmlFor: "nombre" },
+								"Contrase\xF1a"
+							),
+							React.createElement("input", { type: "password", className: "form-control", id: "text-" + props.id, name: "pass", placeholder: "Ingrese Nombre" })
 						)
 					)
 				),
