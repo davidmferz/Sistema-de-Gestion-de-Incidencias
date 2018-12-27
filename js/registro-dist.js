@@ -60,7 +60,7 @@ var Ventana = function Ventana(props) {
 								{ htmlFor: "nombre" },
 								"Nombre de la Surcursal"
 							),
-							React.createElement("input", { type: "text", className: "form-control", id: "text-" + props.id, name: "nombre", placeholder: "Ingrese Nombre" })
+							React.createElement("input", { type: "text", className: "form-control", id: "surcursal-" + props.id, name: "nombre", placeholder: "Ingrese Nombre" })
 						),
 						React.createElement(
 							"div",
@@ -70,7 +70,7 @@ var Ventana = function Ventana(props) {
 								{ htmlFor: "user" },
 								"Usuario"
 							),
-							React.createElement("input", { type: "text", className: "form-control", id: "text-" + props.id, name: "user", placeholder: "Ingrese Nombre" })
+							React.createElement("input", { type: "text", className: "form-control", id: "usuario-" + props.id, name: "user", placeholder: "Ingrese Nombre" })
 						),
 						React.createElement(
 							"div",
@@ -80,7 +80,7 @@ var Ventana = function Ventana(props) {
 								{ htmlFor: "nombre" },
 								"Contrase\xF1a"
 							),
-							React.createElement("input", { type: "password", className: "form-control", id: "text-" + props.id, name: "pass", placeholder: "Ingrese Nombre" })
+							React.createElement("input", { type: "password", className: "form-control", id: "pass-" + props.id, name: "pass", placeholder: "Ingrese Nombre" })
 						)
 					)
 				),
@@ -103,4 +103,4 @@ var Ventana = function Ventana(props) {
 	);
 };
 
-ReactDOM.render(React.createElement(Ventana, { id: "vtnTurno", titulo: "Tipo de Recurso" }), document.getElementById('registro'));
+ReactDOM.render(React.createElement(Ventana, { id: "alta", titulo: "Tipo de Recurso" }), document.getElementById('registro'));

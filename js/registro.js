@@ -24,17 +24,17 @@ const Ventana = props =>{
 
 					<div className="form-group">
 						<label htmlFor="nombre">Nombre de la Surcursal</label>
-						<input type="text" className="form-control" id={"text-"+props.id} name="nombre" placeholder="Ingrese Nombre"/>
+						<input type="text" className="form-control" id={"surcursal-"+props.id} name="nombre" placeholder="Ingrese Nombre"/>
 					</div>
 
 					<div className="form-group">
 						<label htmlFor="user">Usuario</label>
-						<input type="text" className="form-control" id={"text-"+props.id} name="user" placeholder="Ingrese Nombre"/>
+						<input type="text" className="form-control" id={"usuario-"+props.id} name="user" placeholder="Ingrese Nombre"/>
 					</div>
 
 					<div className="form-group">
 						<label htmlFor="nombre">Contraseña</label>
-						<input type="password" className="form-control" id={"text-"+props.id} name="pass" placeholder="Ingrese Nombre"/>
+						<input type="password" className="form-control" id={"pass-"+props.id} name="pass" placeholder="Ingrese Nombre"/>
 					</div>
 
 				</form>
@@ -51,4 +51,4 @@ const Ventana = props =>{
 
 
 
-ReactDOM.render(<Ventana id="vtnTurno" titulo="Tipo de Recurso"/>, document.getElementById('registro'));
+ReactDOM.render(<Ventana id="alta" titulo="Tipo de Recurso"/>, document.getElementById('registro'));

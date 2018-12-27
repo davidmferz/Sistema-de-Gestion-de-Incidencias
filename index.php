@@ -4,9 +4,14 @@
 	{
 		switch ($_SESSION["user"]) 
 		{
-			case "admin"://Administrador
-				header('Location: index000.php');	
+			case 0://usuario
+				header('Location: index001.php');	
 			break;
+
+			case 1://Administrador
+				header('Location: index000.php');
+			break;
+
 		}
 		
 	}
