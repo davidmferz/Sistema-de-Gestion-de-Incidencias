@@ -6,7 +6,7 @@
 	}
 	else
 	{
-		switch ($_SESSION["user"]) 
+		/*switch ($_SESSION["user"]) 
         {
         	case 0:
         		//No es administrador
@@ -15,6 +15,7 @@
 
         	case 1:
         	break;
+        }*/
 	}
 ?>
 
